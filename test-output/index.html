@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-testsuite">
+              <span class="suite-name border-failed">testsuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-testsuite">
+                    <span>C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1\src\test\java\resources\runners\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-testsuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-testsuite">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-testsuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-testsuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-testsuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-testsuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-testsuite" class="hide-methods failed suite-testsuite"> (hide)</a> <!-- hide-methods failed suite-testsuite -->
+                      <a href="#" panel-name="suite-testsuite" class="show-methods failed suite-testsuite"> (show)</a> <!-- show-methods failed suite-testsuite -->
+                    </span>
+                    <div class="method-list-content failed suite-testsuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testsuite" title="com.xyz.bank.testsuite.BankTest" hash-for-method="bankManagerShouldAddCustomerSuccessfully">bankManagerShouldAddCustomerSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testsuite" title="com.xyz.bank.testsuite.BankTest" hash-for-method="customerShouldDepositMoneySuccessfully">customerShouldDepositMoneySuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testsuite" title="com.xyz.bank.testsuite.BankTest" hash-for-method="customerShouldWithdrawMoneySuccessfully">customerShouldWithdrawMoneySuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-testsuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-testsuite" class="hide-methods passed suite-testsuite"> (hide)</a> <!-- hide-methods passed suite-testsuite -->
+                      <a href="#" panel-name="suite-testsuite" class="show-methods passed suite-testsuite"> (show)</a> <!-- show-methods passed suite-testsuite -->
+                    </span>
+                    <div class="method-list-content passed suite-testsuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testsuite" title="com.xyz.bank.testsuite.BankTest" hash-for-method="bankManagerShouldOpenAccountSuccessfully">bankManagerShouldOpenAccountSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-testsuite" title="com.xyz.bank.testsuite.BankTest" hash-for-method="customerShouldLoginAndLogoutSuccessfully">customerShouldLoginAndLogoutSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-testsuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-testsuite" class="panel testsuite">
+          <div class="suite-testsuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.xyz.bank.testsuite.BankTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankManagerShouldAddCustomerSuccessfully">
+                  </a> <!-- bankManagerShouldAddCustomerSuccessfully -->
+                  <span class="method-name">bankManagerShouldAddCustomerSuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@ng-click=&apos;addCustomer()&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33ca0777a64ae313f747dad2e6aa1e3e, findElement {using=xpath, value=//button[@ng-click=&apos;addCustomer()&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\MANASV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50565/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33ca0777a64ae313f747dad2e6aa1e3e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.xyz.bank.utility.Utility.clickOnElement(Utility.java:51)
+	at com.xyz.bank.pages.BankManagerLoginPage.clickOnAddCustomerTab(BankManagerLoginPage.java:23)
+	at com.xyz.bank.testsuite.BankTest.bankManagerShouldAddCustomerSuccessfully(BankTest.java:34)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="customerShouldDepositMoneySuccessfully">
+                  </a> <!-- customerShouldDepositMoneySuccessfully -->
+                  <span class="method-name">customerShouldDepositMoneySuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@ng-click=&apos;customer()&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec902924c761c1a5c634e6a45b75a2aa, findElement {using=xpath, value=//button[@ng-click=&apos;customer()&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\MANASV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50628/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ec902924c761c1a5c634e6a45b75a2aa
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.xyz.bank.utility.Utility.clickOnElement(Utility.java:51)
+	at com.xyz.bank.pages.HomePage.clickOnCustomerLoginTab(HomePage.java:24)
+	at com.xyz.bank.testsuite.BankTest.customerShouldDepositMoneySuccessfully(BankTest.java:89)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="customerShouldWithdrawMoneySuccessfully">
+                  </a> <!-- customerShouldWithdrawMoneySuccessfully -->
+                  <span class="method-name">customerShouldWithdrawMoneySuccessfully</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f5e856f5c72e235887d5be1bb1259f, sendKeysToElement {id=7f971a40-ebca-4740-b4d0-71f9a3b1de00, value=[Ljava.lang.CharSequence;@523d6bdb}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\MANASV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50682}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50682/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -&gt; xpath: //input[@ng-model=&apos;amount&apos;]]
+Session ID: 23f5e856f5c72e235887d5be1bb1259f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
+	at com.xyz.bank.utility.Utility.sendTextToElement(Utility.java:73)
+	at com.xyz.bank.pages.AccountPage.enterAmountToWithdraw(AccountPage.java:58)
+	at com.xyz.bank.testsuite.BankTest.customerShouldWithdrawMoneySuccessfully(BankTest.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testsuite-class-failed -->
+          <div class="suite-testsuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xyz.bank.testsuite.BankTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankManagerShouldOpenAccountSuccessfully">
+                  </a> <!-- bankManagerShouldOpenAccountSuccessfully -->
+                  <span class="method-name">bankManagerShouldOpenAccountSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="customerShouldLoginAndLogoutSuccessfully">
+                  </a> <!-- customerShouldLoginAndLogoutSuccessfully -->
+                  <span class="method-name">customerShouldLoginAndLogoutSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-testsuite-class-passed -->
+        </div> <!-- panel testsuite -->
+        <div panel-name="test-xml-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1\src\test\java\resources\runners\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;testsuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.xyz.bank.customlisteners.CustomListeners&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Bank Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.xyz.bank.testsuite.BankTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Bank Test --&gt;
+&lt;/suite&gt; &lt;!-- testsuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Bank Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bankManagerShouldAddCustomerSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">bankManagerShouldOpenAccountSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">customerShouldDepositMoneySuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">customerShouldLoginAndLogoutSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">customerShouldWithdrawMoneySuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">bankManagerShouldAddCustomerSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">bankManagerShouldOpenAccountSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">customerShouldDepositMoneySuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">customerShouldLoginAndLogoutSuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">customerShouldWithdrawMoneySuccessfully</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_testsuite');
+function tableData_testsuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'bankManagerShouldAddCustomerSuccessfully')
+data.setCell(0, 2, 'com.xyz.bank.testsuite.BankTest')
+data.setCell(0, 3, 40448);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'customerShouldDepositMoneySuccessfully')
+data.setCell(1, 2, 'com.xyz.bank.testsuite.BankTest')
+data.setCell(1, 3, 40068);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'customerShouldWithdrawMoneySuccessfully')
+data.setCell(2, 2, 'com.xyz.bank.testsuite.BankTest')
+data.setCell(2, 3, 2580);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'bankManagerShouldOpenAccountSuccessfully')
+data.setCell(3, 2, 'com.xyz.bank.testsuite.BankTest')
+data.setCell(3, 3, 1159);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'customerShouldLoginAndLogoutSuccessfully')
+data.setCell(4, 2, 'com.xyz.bank.testsuite.BankTest')
+data.setCell(4, 3, 976);
+window.suiteTableData['testsuite']= { tableData: data, tableDiv: 'times-div-testsuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-testsuite">
+              </div> <!-- times-div-testsuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for testsuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">bankManagerShouldOpenAccountSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked on bank manager login tab [[ChromeDriver: chrome on WINDOWS (9d4552b859a6a845dfd42c8880133ce7)] -> xpath: //button[contains(text(),'Bank Manager Login')]]</span>
+                <span class="reporter-method-output">Clicked on open account tab [[ChromeDriver: chrome on WINDOWS (9d4552b859a6a845dfd42c8880133ce7)] -> xpath: //button[@ng-click='openAccount()']]</span>
+                <span class="reporter-method-output">Selected Harry Potter from [[ChromeDriver: chrome on WINDOWS (9d4552b859a6a845dfd42c8880133ce7)] -> id: userSelect]</span>
+                <span class="reporter-method-output">Selected Pound from [[ChromeDriver: chrome on WINDOWS (9d4552b859a6a845dfd42c8880133ce7)] -> id: currency]</span>
+                <span class="reporter-method-output">Clicked on process button [[ChromeDriver: chrome on WINDOWS (9d4552b859a6a845dfd42c8880133ce7)] -> xpath: //button[contains(text(),'Process')]]</span>
+                <span class="reporter-method-output">Accepted popup</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">customerShouldLoginAndLogoutSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked on customer login tab [[ChromeDriver: chrome on WINDOWS (d381ae9f0f37c879190ad3b9067ce572)] -> xpath: //button[@ng-click='customer()']]</span>
+                <span class="reporter-method-output">Selected Harry Potter from [[ChromeDriver: chrome on WINDOWS (d381ae9f0f37c879190ad3b9067ce572)] -> id: userSelect]</span>
+                <span class="reporter-method-output">Clicked on login button [[ChromeDriver: chrome on WINDOWS (d381ae9f0f37c879190ad3b9067ce572)] -> xpath: //button[contains(text(),'Login')]]</span>
+                <span class="reporter-method-output">Clicked on logout button [[ChromeDriver: chrome on WINDOWS (d381ae9f0f37c879190ad3b9067ce572)] -> xpath: //button[contains(text(),'Logout')]]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">bankManagerShouldAddCustomerSuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked on bank manager login tab [[ChromeDriver: chrome on WINDOWS (33ca0777a64ae313f747dad2e6aa1e3e)] -> xpath: //button[contains(text(),'Bank Manager Login')]]</span>
+                <span class="reporter-method-output">Clicked on add customer tab Proxy element for: DefaultElementLocator 'By.xpath: //button[@ng-click='addCustomer()']'</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/bankManagerShouldAddCustomerSuccessfullyTue_Dec_13_21_25_42_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/bankManagerShouldAddCustomerSuccessfullyTue_Dec_13_21_25_42_GMT_2022.jpg><img src=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/bankManagerShouldAddCustomerSuccessfullyTue_Dec_13_21_25_42_GMT_2022.jpg height=200 width=200></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">customerShouldDepositMoneySuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked on customer login tab Proxy element for: DefaultElementLocator 'By.xpath: //button[@ng-click='customer()']'</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldDepositMoneySuccessfullyTue_Dec_13_21_26_31_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldDepositMoneySuccessfullyTue_Dec_13_21_26_31_GMT_2022.jpg><img src=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldDepositMoneySuccessfullyTue_Dec_13_21_26_31_GMT_2022.jpg height=200 width=200></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">customerShouldWithdrawMoneySuccessfully</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Clicked on customer login tab [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //button[@ng-click='customer()']]</span>
+                <span class="reporter-method-output">Selected Harry Potter from [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> id: userSelect]</span>
+                <span class="reporter-method-output">Clicked on login button [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //button[contains(text(),'Login')]]</span>
+                <span class="reporter-method-output">Clicked on desktop tab [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //button[@ng-click='deposit()']]</span>
+                <span class="reporter-method-output">Entered amount to deposit 100 in deipsit field [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //input[@ng-model='amount']]</span>
+                <span class="reporter-method-output">Clicked on deposit button [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //button[text()='Deposit']]</span>
+                <span class="reporter-method-output">Clicked on withdraw tab [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //button[@ng-click='withdrawl()']]</span>
+                <span class="reporter-method-output">Entered amount to withdraw 50 in withdraw field [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //input[@ng-model='amount']]</span>
+                <span class="reporter-method-output">Click to see screenshot</span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldWithdrawMoneySuccessfullyTue_Dec_13_21_26_46_GMT_2022.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldWithdrawMoneySuccessfullyTue_Dec_13_21_26_46_GMT_2022.jpg><img src=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldWithdrawMoneySuccessfullyTue_Dec_13_21_26_46_GMT_2022.jpg height=200 width=200></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-testsuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.xyz.bank.testsuite.BankTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">4721 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankManagerShouldAddCustomerSuccessfully</span>
+                <span class="method-start">4753 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">45520 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">46237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">48961 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">bankManagerShouldOpenAccountSuccessfully</span>
+                <span class="method-start">48963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">50122 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">50852 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">53523 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">customerShouldDepositMoneySuccessfully</span>
+                <span class="method-start">53525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">93798 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">94607 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">102271 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">customerShouldLoginAndLogoutSuccessfully</span>
+                <span class="method-start">102273 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">103250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">103984 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">inIt</span>
+                <span class="method-start">106613 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">customerShouldWithdrawMoneySuccessfully</span>
+                <span class="method-start">106614 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">109378 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

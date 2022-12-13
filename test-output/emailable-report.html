@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">testsuite</th></tr>
+<tr><td><a href="#t0">Bank Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">110,330</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">testsuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Bank Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.xyz.bank.testsuite.BankTest</td><td><a href="#m0">bankManagerShouldAddCustomerSuccessfully</a></td><td rowspan="1">1670966702134</td><td rowspan="1">40448</td></tr><tr class="failedeven"><td><a href="#m1">customerShouldDepositMoneySuccessfully</a></td><td rowspan="1">1670966750906</td><td rowspan="1">40068</td></tr><tr class="failedeven"><td><a href="#m2">customerShouldWithdrawMoneySuccessfully</a></td><td rowspan="1">1670966803995</td><td rowspan="1">2580</td></tr><tr><th colspan="4">Bank Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.xyz.bank.testsuite.BankTest</td><td><a href="#m3">bankManagerShouldOpenAccountSuccessfully</a></td><td rowspan="1">1670966746344</td><td rowspan="1">1159</td></tr><tr class="passedeven"><td><a href="#m4">customerShouldLoginAndLogoutSuccessfully</a></td><td rowspan="1">1670966799654</td><td rowspan="1">976</td></tr></tbody>
+</table>
+<h2>Bank Test</h2><h3 id="m0">com.xyz.bank.testsuite.BankTest#bankManagerShouldAddCustomerSuccessfully</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Clicked on bank manager login tab [[ChromeDriver: chrome on WINDOWS (33ca0777a64ae313f747dad2e6aa1e3e)] -> xpath: //button[contains(text(),'Bank Manager Login')]]<br/>Clicked on add customer tab Proxy element for: DefaultElementLocator 'By.xpath: //button[@ng-click='addCustomer()']'<br/>Click to see screenshot<br/><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/bankManagerShouldAddCustomerSuccessfullyTue_Dec_13_21_25_42_GMT_2022.jpg>Screenshot</a><br/><br><br/><br><br/><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/bankManagerShouldAddCustomerSuccessfullyTue_Dec_13_21_25_42_GMT_2022.jpg><img src=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/bankManagerShouldAddCustomerSuccessfullyTue_Dec_13_21_25_42_GMT_2022.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@ng-click=&apos;addCustomer()&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [33ca0777a64ae313f747dad2e6aa1e3e, findElement {using=xpath, value=//button[@ng-click=&apos;addCustomer()&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\MANASV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50565/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33ca0777a64ae313f747dad2e6aa1e3e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.xyz.bank.utility.Utility.clickOnElement(Utility.java:51)
+	at com.xyz.bank.pages.BankManagerLoginPage.clickOnAddCustomerTab(BankManagerLoginPage.java:23)
+	at com.xyz.bank.testsuite.BankTest.bankManagerShouldAddCustomerSuccessfully(BankTest.java:34)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.xyz.bank.testsuite.BankTest#customerShouldDepositMoneySuccessfully</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Clicked on customer login tab Proxy element for: DefaultElementLocator 'By.xpath: //button[@ng-click='customer()']'<br/>Click to see screenshot<br/><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldDepositMoneySuccessfullyTue_Dec_13_21_26_31_GMT_2022.jpg>Screenshot</a><br/><br><br/><br><br/><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldDepositMoneySuccessfullyTue_Dec_13_21_26_31_GMT_2022.jpg><img src=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldDepositMoneySuccessfullyTue_Dec_13_21_26_31_GMT_2022.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@ng-click=&apos;customer()&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec902924c761c1a5c634e6a45b75a2aa, findElement {using=xpath, value=//button[@ng-click=&apos;customer()&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\MANASV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50628/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ec902924c761c1a5c634e6a45b75a2aa
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.xyz.bank.utility.Utility.clickOnElement(Utility.java:51)
+	at com.xyz.bank.pages.HomePage.clickOnCustomerLoginTab(HomePage.java:24)
+	at com.xyz.bank.testsuite.BankTest.customerShouldDepositMoneySuccessfully(BankTest.java:89)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.xyz.bank.testsuite.BankTest#customerShouldWithdrawMoneySuccessfully</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Clicked on customer login tab [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //button[@ng-click='customer()']]<br/>Selected Harry Potter from [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> id: userSelect]<br/>Clicked on login button [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //button[contains(text(),'Login')]]<br/>Clicked on desktop tab [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //button[@ng-click='deposit()']]<br/>Entered amount to deposit 100 in deipsit field [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //input[@ng-model='amount']]<br/>Clicked on deposit button [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //button[text()='Deposit']]<br/>Clicked on withdraw tab [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //button[@ng-click='withdrawl()']]<br/>Entered amount to withdraw 50 in withdraw field [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -> xpath: //input[@ng-model='amount']]<br/>Click to see screenshot<br/><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldWithdrawMoneySuccessfullyTue_Dec_13_21_26_46_GMT_2022.jpg>Screenshot</a><br/><br><br/><br><br/><a target = "_blank" href=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldWithdrawMoneySuccessfullyTue_Dec_13_21_26_46_GMT_2022.jpg><img src=C:\Users\Manas Vibhakar\IdeaProjects\xyzpftv1/test-output/html/customerShouldWithdrawMoneySuccessfullyTue_Dec_13_21_26_46_GMT_2022.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23f5e856f5c72e235887d5be1bb1259f, sendKeysToElement {id=7f971a40-ebca-4740-b4d0-71f9a3b1de00, value=[Ljava.lang.CharSequence;@523d6bdb}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\MANASV~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50682}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50682/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (23f5e856f5c72e235887d5be1bb1259f)] -&gt; xpath: //input[@ng-model=&apos;amount&apos;]]
+Session ID: 23f5e856f5c72e235887d5be1bb1259f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
+	at com.xyz.bank.utility.Utility.sendTextToElement(Utility.java:73)
+	at com.xyz.bank.pages.AccountPage.enterAmountToWithdraw(AccountPage.java:58)
+	at com.xyz.bank.testsuite.BankTest.customerShouldWithdrawMoneySuccessfully(BankTest.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.xyz.bank.testsuite.BankTest#bankManagerShouldOpenAccountSuccessfully</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Clicked on bank manager login tab [[ChromeDriver: chrome on WINDOWS (9d4552b859a6a845dfd42c8880133ce7)] -> xpath: //button[contains(text(),'Bank Manager Login')]]<br/>Clicked on open account tab [[ChromeDriver: chrome on WINDOWS (9d4552b859a6a845dfd42c8880133ce7)] -> xpath: //button[@ng-click='openAccount()']]<br/>Selected Harry Potter from [[ChromeDriver: chrome on WINDOWS (9d4552b859a6a845dfd42c8880133ce7)] -> id: userSelect]<br/>Selected Pound from [[ChromeDriver: chrome on WINDOWS (9d4552b859a6a845dfd42c8880133ce7)] -> id: currency]<br/>Clicked on process button [[ChromeDriver: chrome on WINDOWS (9d4552b859a6a845dfd42c8880133ce7)] -> xpath: //button[contains(text(),'Process')]]<br/>Accepted popup</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.xyz.bank.testsuite.BankTest#customerShouldLoginAndLogoutSuccessfully</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Clicked on customer login tab [[ChromeDriver: chrome on WINDOWS (d381ae9f0f37c879190ad3b9067ce572)] -> xpath: //button[@ng-click='customer()']]<br/>Selected Harry Potter from [[ChromeDriver: chrome on WINDOWS (d381ae9f0f37c879190ad3b9067ce572)] -> id: userSelect]<br/>Clicked on login button [[ChromeDriver: chrome on WINDOWS (d381ae9f0f37c879190ad3b9067ce572)] -> xpath: //button[contains(text(),'Login')]]<br/>Clicked on logout button [[ChromeDriver: chrome on WINDOWS (d381ae9f0f37c879190ad3b9067ce572)] -> xpath: //button[contains(text(),'Logout')]]</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
